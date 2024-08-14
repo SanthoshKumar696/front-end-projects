@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Profile Card UI Design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    </head>
+    
+    <body>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            body{
+                height:100vh;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: lightgray;
+            }
+            .profile-card{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                max-width:370px;
+                width:100%;
+                background:#fff;
+                box-shadow:0 5px 10px rgba(0,0,0,0.1);
+                padding:25px;
+                border-radius:24px;
+            }
+            .image{
+                position:relative;
+                height:150px;
+                width:150px;
+                padding:3px;
+                background-color: blue;
+                border-radius: 50%;
+            }
+            .image .profile-img{
+                height:100%;
+                width:100%;
+                object-fit:cover;
+                border-radius: 50%;
+                border:3px solid #fff;
+
+            }
+            .profile-card .text-data{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+            }
+            .text-data .name{
+                font-size:25px;
+                font-weight:500;
+            }
+            .text-data .job{
+                font-size:15px;
+                font-weight:300;
+            }
+            .media-button{
+                display:flex;
+                align-items: center;
+                text-decoration: none;
+                
+            }
+            .link{
+                margin-left:3px;
+                padding:15px;
+                font-size:20px;
+                
+            }
+        </style>
+        
+
+
+        <div class="profile-card">
+            <div class="image">
+                <img src="santhosh-photify-transformed.jpeg" alt="profile-img" class="profile-img">
+            </div>
+
+            <div class="text-data">
+                <span class="name">Santhosh Kumar P</span>
+                <span class="job">FULL STACK DEVELOPER</span>
+
+            </div>
+
+            <div class="media-button">
+                <a href="https://rb.gy/2swhic" target="blank" class="link" >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" class="link" style="color:red;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://github.com/SanthoshKumar696"  target="blank" class="link" style="color:black;">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
